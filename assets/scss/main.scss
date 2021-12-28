@@ -1,0 +1,48 @@
+.v-application {
+	font-family: 'Open Sans' !important;
+}
+
+.v-btn__content {
+	text-transform: none;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 25px;
+	margin-bottom: 2px;
+	// color: $green1;
+	@media (max-width: 600px) {
+		font-size: 14px;
+		line-height: 19px;
+	}
+}
+
+.alternate__stripe {
+	.v-data-table__wrapper {
+		table {
+			thead {
+				tr {
+					th {
+						padding-left: 20px;
+					}
+					th:nth-child(even) {
+						background: #f9f9f9;
+					}
+				}
+			}
+			tbody {
+				tr:hover {
+					background-color: transparent !important;
+				}
+				tr {
+					cursor: pointer;
+					td {
+						padding: 20px;
+					}
+					td:nth-child(even) {
+						background: #f9f9f9;
+					}
+				}
+			}
+		}
+	}
+}

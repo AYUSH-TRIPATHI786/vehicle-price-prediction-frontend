@@ -1,0 +1,97 @@
+// @import './variables.scss';
+@import 'colors.scss';
+$break-point-sm: 960px;
+.vpp {
+	&-main-container {
+		padding-left: 40px;
+		padding-right: 40px;
+		@media (max-width: $break-point-sm) {
+			padding-left: 16px;
+			padding-right: 16px;
+		}
+	}
+	&-title-1 {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 25px;
+		color: $darkGrey;
+		@media (max-width: $break-point-sm) {
+			font-size: 14px;
+			line-height: 19px;
+		}
+	}
+
+	&-title-4 {
+		font-style: normal;
+		font-weight: bold !important;
+		font-size: 18px;
+		line-height: 25px;
+		color: $darkGrey;
+		@media (max-width: $break-point-sm) {
+			font-size: 14px;
+			line-height: 19px;
+		}
+	}
+
+	&-tile-subtitle {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 21.79px;
+		color: $darkGrey;
+		@media (max-width: $break-point-sm) {
+			font-size: 11px;
+			line-height: 14.98px;
+		}
+	}
+
+	&-tile-subtitle-2 {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 21.79px;
+		color: $darkGrey3;
+		@media (max-width: $break-point-sm) {
+			font-size: 11px;
+			line-height: 14.98px;
+		}
+	}
+
+	&-tile-subtitle-3 {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 21.79px;
+		color: $lightGrey;
+		@media (max-width: $break-point-sm) {
+			font-size: 11px;
+			line-height: 14.98px;
+		}
+	}
+
+	&-text-1 {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 19px;
+		color: $darkGrey;
+		@media (max-width: $break-point-sm) {
+			font-size: 12px;
+			line-height: 15px;
+		}
+	}
+
+	&-crumbs {
+		padding: 20px 40px 0 40px;
+		color: $darkGrey2;
+		font-weight: 600;
+		font-size: 14px;
+		@media (max-width: $break-point-sm) {
+			padding: 16px 16px 0 16px;
+		}
+	}
+	&-rounded-1 {
+		border-radius: 10px !important;
+	}
+}

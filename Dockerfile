@@ -2,7 +2,9 @@ FROM node:12.14.0 as builder
 WORKDIR /app
 
 RUN export NODE_OPTIONS=--max-old-space-size=8192
-COPY package.json .
+# use COPY package.json . for faster build 
+# but was not working with aws
+COPY . .
 RUN npm install
 
 COPY . . 

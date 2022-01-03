@@ -4,7 +4,7 @@ WORKDIR /app
 RUN export NODE_OPTIONS=--max-old-space-size=8192
 # use COPY package.json . for faster build 
 # but was not working with aws
-COPY . .
+COPY package*.json ./
 RUN npm install
 
 COPY . . 
